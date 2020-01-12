@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap');
 :root{
   --sidebar-flex:1.5;
   --condiv-flex:6;
@@ -9,6 +10,9 @@
 {
   margin:0;
   padding: 0;
+}
+body{
+  font-family: 'Raleway';
 }
 .App
 {
@@ -111,7 +115,7 @@ h1,h2,h3,h4,p{
 }
 .active
 {
-  text-decoration: underline;
+  font-weight: bolder;
 }
 .skills ul li
 {
