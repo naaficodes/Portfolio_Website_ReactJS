@@ -8,8 +8,8 @@ class Navitem extends Component {
         if(this.props.exact){
             console.log("true");
             return (
-                <li>
-                    <Link exact to={this.props.tolink}>{this.props.item}</Link>
+                <li id={this.props.item}>
+                    <Link exact to={this.props.tolink} onClick={this.props.activec.bind(this,this.props.item)}>{this.props.item}</Link>
                 </li>
             )
         }
@@ -17,8 +17,8 @@ class Navitem extends Component {
         {
             console.log("false");
             return (
-                <li>
-                    <Link to={this.props.tolink}>{this.props.item}</Link>
+                <li id={this.props.item}>
+                    <Link to={this.props.tolink} onClick={this.props.activec.bind(this,this.props.item)}>{this.props.item}</Link>
                 </li>
             )
 

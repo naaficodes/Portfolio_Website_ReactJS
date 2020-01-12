@@ -109,7 +109,10 @@ h1,h2,h3,h4,p{
 	background-color: #ffffff;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-
+.active
+{
+  text-decoration: underline;
+}
 .skills ul li
 {
   list-style-type:none;
