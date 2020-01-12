@@ -6,10 +6,11 @@ class Sidebar extends Component {
     render() {
         return (
             <div className="sidebar">
-               <Navbar />
+            <Navbar />
             </div>
-        )
+            )
+        }
     }
-}
-
+    
 export default Sidebar
+    

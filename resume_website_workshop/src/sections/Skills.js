@@ -19,15 +19,16 @@ class Skills extends Component {
     render() {
         return (
             <div className="condiv skills">
-                <h1 className="subtopic">My Skills</h1>
-                <ul>
-                {this.state.myskills.map((value,index)=>{
-                    return <li>{value}</li>
-                })}
-                </ul>
+            <h1 className="subtopic">My Skills</h1>
+            <ul>
+            {this.state.myskills.map((value,index)=>{
+                return <li>{value}</li>
+            })}
+            </ul>
             </div>
-        )
+            )
+        }
     }
-}
-
-export default Skills
+    
+    export default Skills
+    
