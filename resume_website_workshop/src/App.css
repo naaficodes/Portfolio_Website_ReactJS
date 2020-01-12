@@ -1,7 +1,9 @@
 :root{
-  --sidebar-d-flex:1.5;
-  --condiv-d-flex:6;
-  --fontsize-d:1.6rem;
+  --sidebar-flex:1.5;
+  --condiv-flex:6;
+  --fontsize-p:1.2rem;
+  --fontsize-nav:1.6rem;
+  --typing-font:3rem;
 }
 *
 {
@@ -17,30 +19,39 @@
 .sidebar
 {
   padding:60px 30px 0px 30px ;
-  flex:var(--sidebar-d-flex);
+  flex:var(--sidebar-flex);
   background: rgb(238,103,143);
-background: linear-gradient(180deg, rgba(238,103,143,1) 50%, rgba(132,124,252,1) 80%);
+  background: linear-gradient(180deg, rgba(238,103,143,1) 50%, rgba(132,124,252,1) 80%);
 }
 .condiv
 {
   padding: 100px ;
   background-color: #f4f5f9;
-  flex:var(--condiv-d-flex);
+  flex:var(--condiv-flex);
 }
 
 .home
 {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+  
+}
+.profilepic
+{
+  border-radius: 50%;
+  width: 200px;
+  margin: 30px;
 }
 .typingeffect
 {
-  font-size: var(--fontsize-d);
+  font-size: var(--typing-font);
+  margin-bottom: 30px;
 }
 
 nav ul{
-  font-size:var(--fontsize-d) ;
+  font-size:var(--fontsize-nav) ;
   text-align: center;
   list-style-type: none;
   text-decoration: none;
@@ -48,9 +59,7 @@ nav ul{
 }
 nav ul li
 {
- 
   margin:40px;
-  /* width: 100%; */
 }
 
 a
@@ -59,31 +68,92 @@ a
   color: white;
 }
 
+.subtopic
+{
+  margin:10px 10px 30px 10px !important;
+}
+p{
+  font-size: var(--fontsize-p);
+}
+h1,h2,h3,h4,p{
+  margin: 10px;
+}
+.social
+{
+  position: absolute;
+	margin-top: 20px;
+	display: flex;
 
+  bottom: 60px;
+
+}
+.social i
+{
+	padding-right: 30px;
+	font-size: 25px;
+	color: #9a9b9c;
+}
+.social i:hover
+{
+	color: #ffffff;
+}
+.widecard
+{
+	border:0px solid #9a9b9c;
+	display: flex;
+	margin:30px 0px 30px 0px;
+}
+.widecard:hover
+{
+	color: #1b1d20;
+	background-color: #ffffff;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.skills ul li
+{
+  list-style-type:none;
+  margin:30px;
+}
 
 @media all and (max-width: 450px) {
   :root {
-    --fontsize-d:1rem;
-    --sidebar-d-flex:0;
-}
-.App
+    --fontsize-nav:1rem;
+    --sidebar-flex:0;
+    --typing-font:2rem;
+  }
+  .App
+  {
+    flex-direction: column;
+  }
+  .sidebar
+  {
+    padding: 30px;
+    background: rgb(238,103,143);
+    background: linear-gradient(90deg, rgba(238,103,143,1) 50%, rgba(132,124,252,1) 80%);
+  }
+  .condiv
+  {
+    padding: 50px ;
+  }
+  nav ul
+  {
+    display: flex;
+  }
+  nav ul li
+  {
+    margin: 10px;
+  }
+  .social
+  {
+    left:0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    bottom: 30px;
+  }
+  .social i
 {
-  flex-direction: column;
+	padding-right: 0px;
 }
-.sidebar
-{
-  padding: 30px;
-  background: rgb(238,103,143);
-background: linear-gradient(90deg, rgba(238,103,143,1) 50%, rgba(132,124,252,1) 80%);
-}
-
-nav ul
-{
-  display: flex;
-}
-nav ul li
-{
-  margin: 10px;
-}
-
 }
