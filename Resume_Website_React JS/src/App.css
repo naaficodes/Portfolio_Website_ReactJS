@@ -20,7 +20,7 @@ body{
   width: 100vw;
   min-height: 100vh;
 }
-.sidebar
+nav
 {
   padding:60px 30px 0px 30px ;
   flex:var(--sidebar-flex);

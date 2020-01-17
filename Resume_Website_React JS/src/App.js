@@ -2,16 +2,14 @@ import React from 'react';
 import './App.css';
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
-  Link
 } from "react-router-dom";
-import Sidebar from './sections/Sidebar';
-import Home from './sections/Home';
-import About from './sections/About';
-import Education from './sections/Education';
-import Skills from './sections/Skills';
-import Contact from './sections/Contact';
+import Navbar from './components/Navbar';
+import Home from './contents/Home';
+import About from './contents/About';
+import Education from './contents/Education';
+import Skills from './contents/Skills';
+import Contact from './contents/Contact';
 
 
 
@@ -19,7 +17,7 @@ function App() {
   return (
     <Router>
     <div className="App">
-    <Sidebar />
+    <Navbar />
     <Route exact path="/">
     <Home />
     </Route>

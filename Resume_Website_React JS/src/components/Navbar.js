@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import {
-    Link
-} from "react-router-dom";
 import Navitem from './Navitem';
 
 class Navbar extends Component {
@@ -26,11 +23,11 @@ class Navbar extends Component {
         return (
             <nav>
             <ul>
-            <Navitem item="Home" tolink="/" exact={true} activec={this.activeitem}></Navitem>
-            <Navitem item="About" tolink="/about" exact={false} activec={this.activeitem}></Navitem>
-            <Navitem item="Education" tolink="/education" exact={false} activec={this.activeitem}></Navitem>
-            <Navitem item="Skills" tolink="/skills" exact={false} activec={this.activeitem}></Navitem>
-            <Navitem item="Contact" tolink="/contact" exact={false} activec={this.activeitem}></Navitem>
+            <Navitem item="Home" tolink="/"  activec={this.activeitem}></Navitem>
+            <Navitem item="About" tolink="/about"  activec={this.activeitem}></Navitem>
+            <Navitem item="Education" tolink="/education"  activec={this.activeitem}></Navitem>
+            <Navitem item="Skills" tolink="/skills"  activec={this.activeitem}></Navitem>
+            <Navitem item="Contact" tolink="/contact"  activec={this.activeitem}></Navitem>
             </ul>
             </nav>
             )

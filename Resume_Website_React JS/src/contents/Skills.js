@@ -5,17 +5,10 @@ class Skills extends Component {
     {
         super(props);
         this.state={
-            'myskills':['HTML','CSS','JS','PHP','REACT JS','FIREBASE']
+            'myskills':['HTML','CSS','JS','PHP','REACT JS','FIREBASE','MIT APP']
         };
     }
-    skillrender=()=>
-    {
-        let x=[]
-        this.state.myskills.forEach(element => {
-            x.push("<li>"+element+"</li>");
-        });
-        return x;
-    };
+
     render() {
         return (
             <div className="condiv skills">
