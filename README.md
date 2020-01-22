@@ -8,7 +8,7 @@ Open Terminal
 
 Type the below commands
 
-$ cd Resume_Website_React JS
+$ cd Portfolio_Website_React JS
 
 $ npm install
 
