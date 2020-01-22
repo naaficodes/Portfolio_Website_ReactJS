@@ -9,7 +9,9 @@ Open Terminal
 Type the below commands
 
 $ cd Resume_Website_React JS
+
 $ npm install
+
 $ npm start
 
 That's all !
