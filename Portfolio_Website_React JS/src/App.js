@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {
   BrowserRouter as Router,
-  Route,
+  Route,Routes
 } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Home from './contents/Home';
@@ -18,21 +18,21 @@ function App() {
     <Router>
     <div className="App">
     <Navbar />
-    <Route exact path="/">
-    <Home />
-    </Route>
-    <Route path="/about">
-    <About />
-    </Route>
-    <Route path="/education">
-    <Education />
-    </Route>
-    <Route path="/skills">
-    <Skills />
-    </Route>
-    <Route path="/contact">
-    <Contact />
-    </Route>
+
+    <Routes>
+      <Route exact path="/" element={ <Home />} />
+
+      <Route path="/about" element={<About />} />
+
+      <Route path="/education" element={<Education />} />
+
+      <Route path="/skills" element={<Skills />} />
+
+      <Route path="/contact" element={<Contact />} />
+  
+
+    </Routes>
+
     </div>
     </Router>
     );
