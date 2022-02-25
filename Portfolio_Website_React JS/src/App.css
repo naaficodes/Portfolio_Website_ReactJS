@@ -11,14 +11,13 @@
   margin:0;
   padding: 0;
 }
-body{
-  font-family: 'Raleway';
-}
+
 .App
 {
   display: flex;
   width: 100vw;
   min-height: 100vh;
+;
 }
 nav
 {
@@ -26,12 +25,14 @@ nav
   flex:var(--sidebar-flex);
   background: rgb(238,103,143);
   background: linear-gradient(180deg, rgba(238,103,143,1) 50%, rgba(132,124,252,1) 80%);
+ 
 }
 .condiv
 {
-  padding: 100px ;
+  padding: 50px ;
   background-color: #f4f5f9;
   flex:var(--condiv-flex);
+
 }
 
 .home
@@ -41,12 +42,14 @@ nav
   flex-direction: column;
   align-items: center;
   
+  
 }
 .profilepic
 {
   border-radius: 50%;
   width: 200px;
   margin: 30px;
+
 }
 .typingeffect
 {
@@ -60,10 +63,12 @@ nav ul{
   list-style-type: none;
   text-decoration: none;
   color: white !important;
+
 }
 nav ul li
 {
   margin:40px;
+
 }
 
 a
@@ -130,13 +135,16 @@ h1,h2,h3,h4,p{
   .App
   {
     flex-direction: column;
+
   }
   .sidebar
   {
-    padding: 30px;
+
+    padding: 30px; 
     background: rgb(238,103,143);
     background: linear-gradient(90deg, rgba(238,103,143,1) 50%, rgba(132,124,252,1) 80%);
-  }
+
+  } 
   .condiv
   {
     padding: 50px ;
